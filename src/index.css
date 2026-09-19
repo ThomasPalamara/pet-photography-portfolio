@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind v2 has no "columns" or "break-inside" utilities, so masonry is
+   done with plain CSS multi-column layout here instead. */
+.masonry-gallery {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.masonry-gallery > * {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-gallery {
+    column-count: 3;
+  }
+}

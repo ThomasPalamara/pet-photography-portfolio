@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "brand": "Toma & Pals",
+    "tagline": "Dog Photography",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "gallery": "Gallery"
+    },
+    "bookASession": "Book a Session"
+  },
+  "hero": {
+    "headingLine1": "Real moments.",
+    "headingLine2": "Beautifully captured.",
+    "subtitle": "Outdoor dog photography across Yorkshire that celebrates your best friend and the bond you share.",
+    "imageAlt": "A dog photographed for Toma & Pals",
+    "bookASession": "Book a Session",
+    "viewGalleries": "View Galleries"
+  },
+  "features": {
+    "items": {
+      "patient": {
+        "title": "Experienced & Patient",
+        "description": "I take the time to let your dog settle before we really start."
+      },
+      "natural": {
+        "title": "Natural & Relaxed",
+        "description": "I let your dog lead, so their real personality comes through in every shot."
+      },
+      "quality": {
+        "title": "High-Quality Images",
+        "description": "Hand-edited photos you'll want printed and on the wall."
+      },
+      "booking": {
+        "title": "Easy Booking",
+        "description": "Send me a message and we'll work around your schedule."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "Photography for every pet and every occasion.",
+    "viewAll": "View all services",
+    "items": {
+      "petPortraits": {
+        "title": "Pet Portraits",
+        "description": "Characterful portraits of your dog outdoors, in a spot that suits them."
+      },
+      "puppySessions": {
+        "title": "Puppy Sessions",
+        "description": "Fun, natural sessions to capture the early months before they fly by."
+      },
+      "multiPetSessions": {
+        "title": "Multi-Pet Sessions",
+        "description": "For households with two (or more!) best friends to photograph together."
+      },
+      "comingSoon": {
+        "title": "More Sessions Coming Soon",
+        "description": "New session types are on the way. Get in touch if there's something specific you're after."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Featured Gallery",
+    "heading": "Moments you'll want to remember forever.",
+    "viewFull": "View full gallery",
+    "photoAlt": "Toma & Pals gallery photo {{index}}"
+  },
+  "galleryPage": {
+    "eyebrow": "Gallery",
+    "heading": "A closer look at real sessions.",
+    "intro": "A growing collection of moments captured across Yorkshire, from relaxed portraits to golden hour walks.",
+    "photoAlt": "Toma & Pals gallery photo {{index}}"
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "headingLine1": "Hi, I'm Toma.",
+    "headingLine2": "From wildlife to wagging tails.",
+    "paragraph": "I started out as a wildlife photographer. One afternoon I was shooting in the park when I noticed a dog show going on nearby, so I wandered over for a look and started taking pictures and the owners I met wanted proper portraits of their dogs. That was the start of Toma & Pals. I still work mostly outdoors, where dogs are at their most playful and themselves, and I bring my wildlife habits with me: patience, natural light, and waiting for the moment rather than forcing it.",
+    "imageAlt": "Toma, pet photographer at Toma & Pals",
+    "bookASession": "Book a Session"
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "heading": "Book a session or ask a question.",
+    "subtitle": "Tell me a bit about your dog and what you're after, and I'll get back to you to sort out the details.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "service": "Session Type",
+      "message": "Message"
+    },
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thanks! Your message has been sent. I'll be in touch soon.",
+    "error": "Sorry, something went wrong sending your message. Please try again or email me directly."
+  },
+  "notFound": {
+    "eyebrow": "Coming Soon",
+    "heading": "This page isn't ready yet.",
+    "paragraph": "I'm still putting the details together. In the meantime, head back to the homepage or get in touch to book a session.",
+    "backHome": "Back to Home",
+    "contact": "Contact us"
+  },
+  "petPortraits": {
+    "backToServices": "Back to all services",
+    "eyebrow": "Services",
+    "title": "Pet Portraits",
+    "intro": "Timeless, characterful portraits of your best friend — shot outdoors in a location that means something to you. No forced poses, just genuine personality.",
+    "imageAlt": "Pet Portraits",
+    "bookASession": "Book a Session",
+    "includedHeading": "What's included",
+    "included": {
+      "session": "Relaxed 60-minute session",
+      "backdrop": "Outdoor location of your choice across Yorkshire",
+      "treats": "Treats & toys on hand to keep tails wagging",
+      "gallery": "Online gallery to view and download your photos",
+      "downloads": "High-resolution digital downloads"
+    },
+    "pricingEyebrow": "Pricing",
+    "package": {
+      "name": "The Portrait Session",
+      "price": "£125",
+      "includes": {
+        "pets": "One dog",
+        "duration": "60-minute session",
+        "images": "7–10 fully edited digital images"
+      },
+      "note": "Prints and framed artwork available to order at an additional charge."
+    }
+  },
+  "puppySessions": {
+    "backToServices": "Back to all services",
+    "eyebrow": "Services",
+    "title": "Puppy Sessions",
+    "intro": "Puppies change fast. This package spreads four outdoor sessions across your dog's first year, so you keep a proper record of every stage — from the clumsy early weeks to the dog they grow into.",
+    "imageAlt": "Puppy Sessions",
+    "bookASession": "Book a Session",
+    "includedHeading": "What's included",
+    "included": {
+      "sessions": "Four relaxed sessions across your puppy's first year",
+      "milestones": "Timed around milestones — roughly 8–12 weeks, 6 months, 9 months and 1 year",
+      "location": "Outdoor location of your choice across Yorkshire",
+      "treats": "Treats & toys on hand to keep tails wagging",
+      "gallery": "Online gallery to view and download after each session",
+      "downloads": "High-resolution digital downloads from every session"
+    },
+    "pricingEyebrow": "Pricing",
+    "package": {
+      "name": "The Puppy's First Year",
+      "price": "£375",
+      "includes": {
+        "sessions": "Four sessions for the price of three",
+        "duration": "60 minutes per session",
+        "images": "7–10 fully edited digital images per session",
+        "pets": "One puppy"
+      },
+      "note": "Book the first session any time from 8 weeks old. Prints and framed artwork available to order at an additional charge."
+    }
+  },
+  "multiPetSessions": {
+    "backToServices": "Back to all services",
+    "eyebrow": "Services",
+    "title": "Multi-Pet Sessions",
+    "intro": "Two dogs, one photo, easier said than done. A relaxed outdoor session built around getting both of them in frame, together and apart, without anyone losing patience.",
+    "imageAlt": "Multi-Pet Sessions",
+    "bookASession": "Book a Session",
+    "includedHeading": "What's included",
+    "included": {
+      "session": "Relaxed 60-minute session",
+      "location": "Outdoor location of your choice across Yorkshire",
+      "helper": "Bring a family member or friend to help wrangle, it makes all the difference",
+      "treats": "Treats & toys on hand to keep tails wagging",
+      "gallery": "Online gallery to view and download your photos",
+      "downloads": "High-resolution digital downloads"
+    },
+    "pricingEyebrow": "Pricing",
+    "package": {
+      "name": "The Multi-Pet Session",
+      "price": "£150",
+      "includes": {
+        "pets": "Two dogs",
+        "duration": "60-minute session",
+        "images": "7–10 fully edited digital images"
+      },
+      "note": "Each additional dog beyond two adds a small fee, ask when you enquire. Prints and framed artwork available to order at an additional charge."
+    }
+  }
+}
