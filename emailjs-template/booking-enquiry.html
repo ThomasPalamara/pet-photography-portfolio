@@ -1,0 +1,94 @@
+<!--
+  EmailJS template for the Thomas & Pals contact form.
+
+  Setup:
+  1. In the EmailJS dashboard, open Email Templates and create/edit the
+     template whose ID matches VITE_EMAILJS_TEMPLATE_ID in your .env file.
+  2. Switch the editor to "Code" / HTML view and paste this file's contents
+     into the body.
+  3. Set the template's "To Email" to your inbox (thomasandpalsphoto@gmail.com).
+  4. Set "Reply To" to {{email}} so you can hit reply and answer the
+     customer directly.
+  5. Set the Subject to something like: New enquiry from {{name}}
+  6. Save, then send a real test message through the site's /contact form
+     to confirm it arrives formatted correctly.
+
+  Variables used below match the contact form's field names exactly:
+  {{name}}, {{email}}, {{phone}}, {{service}}, {{message}}.
+-->
+<div style="background-color:#f9fafb;padding:32px 16px;font-family:Helvetica,Arial,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;margin:0 auto;background-color:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #e5e7eb;">
+    <tr>
+      <td style="background-color:#A9825A;padding:24px 32px;">
+        <span style="font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:bold;letter-spacing:0.05em;color:#ffffff;text-transform:uppercase;">
+          Thomas &amp; Pals
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:32px;">
+        <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#A9825A;">
+          New Booking Enquiry
+        </p>
+        <h1 style="margin:0 0 24px;font-family:Georgia,'Times New Roman',serif;font-size:24px;color:#111827;">
+          {{name}} wants to get in touch
+        </h1>
+
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;width:120px;">
+              Name
+            </td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:14px;color:#111827;">
+              {{name}}
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;">
+              Email
+            </td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:14px;color:#111827;">
+              <a href="mailto:{{email}}" style="color:#A9825A;text-decoration:none;">{{email}}</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;">
+              Phone
+            </td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:14px;color:#111827;">
+              {{phone}}
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;">
+              Session Type
+            </td>
+            <td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-size:14px;color:#111827;">
+              {{service}}
+            </td>
+          </tr>
+        </table>
+
+        <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#6b7280;">
+          Message
+        </p>
+        <p style="margin:0;padding:16px;background-color:#f9fafb;border-radius:8px;font-size:14px;line-height:1.6;color:#111827;white-space:pre-wrap;">
+          {{message}}
+        </p>
+
+        <a href="mailto:{{email}}" style="display:inline-block;margin-top:28px;padding:12px 28px;background-color:#A9825A;color:#ffffff;font-size:13px;font-weight:600;letter-spacing:0.05em;text-decoration:none;border-radius:9999px;">
+          Reply to {{name}}
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px 32px;background-color:#f9fafb;border-top:1px solid #e5e7eb;">
+        <p style="margin:0;font-size:12px;color:#9ca3af;">
+          Sent automatically from the contact form at thomasandpals.com
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>

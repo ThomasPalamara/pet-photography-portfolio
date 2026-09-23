@@ -133,7 +133,10 @@ const Contact = () => {
               className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
             >
               {SERVICES.map((service) => (
-                <option key={service.id} value={service.id}>
+                <option
+                  key={service.id}
+                  value={t(`services:items.${service.id}.title`)}
+                >
                   {t(`services:items.${service.id}.title`)}
                 </option>
               ))}
