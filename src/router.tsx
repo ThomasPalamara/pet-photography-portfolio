@@ -10,6 +10,7 @@ import ContactPage from './pages/Contact';
 import PetPortraits from './pages/services/PetPortraits';
 import PuppySessions from './pages/services/PuppySessions';
 import MultiPetSessions from './pages/services/MultiPetSessions';
+import Bespoke from './pages/services/Bespoke';
 import NotFound from './pages/NotFound';
 
 export const routes = (
@@ -20,6 +21,7 @@ export const routes = (
     <Route path="/services/pet-portraits" element={<PetPortraits />} />
     <Route path="/services/puppy-sessions" element={<PuppySessions />} />
     <Route path="/services/multi-pet-sessions" element={<MultiPetSessions />} />
+    <Route path="/services/bespoke-sessions" element={<Bespoke />} />
     <Route path="*" element={<NotFound />} />
   </Route>
 );

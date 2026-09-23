@@ -8,18 +8,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto px-6 md:px-12 py-20 grid lg:grid-cols-2 gap-12 items-center"
+      className="about-grid max-w-7xl mx-auto px-6 md:px-12 py-20"
     >
-      <div className="rounded-2xl overflow-hidden h-[420px] lg:h-[520px]">
-        <img
-          src={aboutImage}
-          alt={t("imageAlt")}
-          className="w-full h-full object-cover"
-          style={{ objectPosition: "-85px center" }}
-        />
-      </div>
-
-      <div>
+      <div className="about-heading">
         <p className="text-xs font-semibold tracking-widest text-gray-500 mb-2 uppercase">
           {t("eyebrow")}
         </p>
@@ -28,7 +19,19 @@ const About = () => {
           <br />
           {t("headingLine2")}
         </h2>
-        <p className="mt-6 text-gray-600 leading-relaxed max-w-md">
+      </div>
+
+      <div className="about-image rounded-2xl overflow-hidden h-[420px] lg:h-[520px]">
+        <img
+          src={aboutImage}
+          alt={t("imageAlt")}
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "-85px center" }}
+        />
+      </div>
+
+      <div className="about-body">
+        <p className="text-gray-600 leading-relaxed max-w-md">
           {t("paragraph")}
         </p>
         <Button href="/contact" className="mt-8">

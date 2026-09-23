@@ -1,20 +1,31 @@
 {
   "nav": {
-    "brand": "Toma & Pals",
-    "tagline": "Dog Photography",
+    "brand": "{{brand}}",
+    "tagline": "Pet Photography",
     "links": {
       "home": "Home",
       "about": "About",
       "services": "Services",
       "gallery": "Gallery"
     },
-    "bookASession": "Book a Session"
+    "bookASession": "Book a Session",
+    "bookASessionShort": "Book Now",
+    "toggleMenu": "Toggle menu"
+  },
+  "footer": {
+    "blurb": "Outdoor pet photography across Yorkshire, capturing real moments between you and your best friend.",
+    "linksHeading": "Explore",
+    "servicesHeading": "Services",
+    "contactHeading": "Get In Touch",
+    "location": "Yorkshire, UK",
+    "instagramHandle": "@thomas.pals.pet.photography",
+    "copyright": "© {{year}} {{brand}}. All rights reserved."
   },
   "hero": {
     "headingLine1": "Real moments.",
     "headingLine2": "Beautifully captured.",
-    "subtitle": "Outdoor dog photography across Yorkshire that celebrates your best friend and the bond you share.",
-    "imageAlt": "A dog photographed for Toma & Pals",
+    "subtitle": "Outdoor pet photography across Yorkshire that celebrates your best friend and the bond you share.",
+    "imageAlt": "A pet photographed for {{brand}}",
     "bookASession": "Book a Session",
     "viewGalleries": "View Galleries"
   },
@@ -22,11 +33,11 @@
     "items": {
       "patient": {
         "title": "Experienced & Patient",
-        "description": "I take the time to let your dog settle before we really start."
+        "description": "I take the time to let your pet settle before we really start."
       },
       "natural": {
         "title": "Natural & Relaxed",
-        "description": "I let your dog lead, so their real personality comes through in every shot."
+        "description": "I let your pet lead, so their real personality comes through in every shot."
       },
       "quality": {
         "title": "High-Quality Images",
@@ -45,7 +56,7 @@
     "items": {
       "petPortraits": {
         "title": "Pet Portraits",
-        "description": "Characterful portraits of your dog outdoors, in a spot that suits them."
+        "description": "Characterful portraits of your pet outdoors, in a spot that suits them."
       },
       "puppySessions": {
         "title": "Puppy Sessions",
@@ -55,9 +66,9 @@
         "title": "Multi-Pet Sessions",
         "description": "For households with two (or more!) best friends to photograph together."
       },
-      "comingSoon": {
-        "title": "More Sessions Coming Soon",
-        "description": "New session types are on the way. Get in touch if there's something specific you're after."
+      "bespoke": {
+        "title": "Bespoke Sessions",
+        "description": "Unusual pets, indoor shoots, or anything else that doesn't fit a package — get in touch for a quote."
       }
     }
   },
@@ -65,26 +76,26 @@
     "eyebrow": "Featured Gallery",
     "heading": "Moments you'll want to remember forever.",
     "viewFull": "View full gallery",
-    "photoAlt": "Toma & Pals gallery photo {{index}}"
+    "photoAlt": "{{brand}} gallery photo {{index}}"
   },
   "galleryPage": {
     "eyebrow": "Gallery",
     "heading": "A closer look at real sessions.",
     "intro": "A growing collection of moments captured across Yorkshire, from relaxed portraits to golden hour walks.",
-    "photoAlt": "Toma & Pals gallery photo {{index}}"
+    "photoAlt": "{{brand}} gallery photo {{index}}"
   },
   "about": {
     "eyebrow": "About Me",
-    "headingLine1": "Hi, I'm Toma.",
+    "headingLine1": "Hi, I'm Thomas.",
     "headingLine2": "From wildlife to wagging tails.",
-    "paragraph": "I started out as a wildlife photographer. One afternoon I was shooting in the park when I noticed a dog show going on nearby, so I wandered over for a look and started taking pictures and the owners I met wanted proper portraits of their dogs. That was the start of Toma & Pals. I still work mostly outdoors, where dogs are at their most playful and themselves, and I bring my wildlife habits with me: patience, natural light, and waiting for the moment rather than forcing it.",
-    "imageAlt": "Toma, pet photographer at Toma & Pals",
+    "paragraph": "I started out as a wildlife photographer. One afternoon I was shooting in the park when I noticed a dog show going on nearby, so I wandered over for a look and started taking pictures and the owners I met wanted proper portraits of their dogs. That was the start of {{brand}}. I still work mostly outdoors, where pets are at their most playful and themselves, and I bring my wildlife habits with me: patience, natural light, and waiting for the moment rather than forcing it.",
+    "imageAlt": "Thomas, pet photographer at {{brand}}",
     "bookASession": "Book a Session"
   },
   "contact": {
     "eyebrow": "Get In Touch",
     "heading": "Book a session or ask a question.",
-    "subtitle": "Tell me a bit about your dog and what you're after, and I'll get back to you to sort out the details.",
+    "subtitle": "Tell me a bit about your pet and what you're after, and I'll get back to you to sort out the details.",
     "fields": {
       "name": "Name",
       "email": "Email",
@@ -124,7 +135,7 @@
       "name": "The Portrait Session",
       "price": "£125",
       "includes": {
-        "pets": "One dog",
+        "pets": "One pet",
         "duration": "60-minute session",
         "images": "7–10 fully edited digital images"
       },
@@ -164,7 +175,7 @@
     "backToServices": "Back to all services",
     "eyebrow": "Services",
     "title": "Multi-Pet Sessions",
-    "intro": "Two dogs, one photo, easier said than done. A relaxed outdoor session built around getting both of them in frame, together and apart, without anyone losing patience.",
+    "intro": "Two pets, one photo, easier said than done. A relaxed outdoor session built around getting both of them in frame, together and apart, without anyone losing patience.",
     "imageAlt": "Multi-Pet Sessions",
     "bookASession": "Book a Session",
     "includedHeading": "What's included",
@@ -181,11 +192,65 @@
       "name": "The Multi-Pet Session",
       "price": "£150",
       "includes": {
-        "pets": "Two dogs",
+        "pets": "Two pets",
         "duration": "60-minute session",
         "images": "7–10 fully edited digital images"
       },
-      "note": "Each additional dog beyond two adds a small fee, ask when you enquire. Prints and framed artwork available to order at an additional charge."
+      "note": "Each additional pet beyond two adds a small fee, ask when you enquire. Prints and framed artwork available to order at an additional charge."
+    }
+  },
+  "bespoke": {
+    "backToServices": "Back to all services",
+    "eyebrow": "Services",
+    "title": "Bespoke Sessions",
+    "intro": "Not every session fits neatly into a package. If you need an indoor shoot, have an unusual pet, or just want something a bit different, tell me what you have in mind and I'll put together a quote.",
+    "imageAlt": "Bespoke Sessions",
+    "getQuote": "Get a Quote",
+    "goodForHeading": "Good for",
+    "goodFor": {
+      "unusual": "Unusual or less typical pets",
+      "indoor": "Indoor sessions, at home or elsewhere",
+      "custom": "Anything that doesn't quite fit the other packages"
+    },
+    "howHeading": "How it works",
+    "how": {
+      "enquire": "Tell me about your pet and what you have in mind via the contact form",
+      "quote": "I'll get back to you with a tailored price and session length",
+      "book": "Once you're happy, we lock in a date"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Pet Photography in Yorkshire",
+      "description": "Outdoor pet photography across Yorkshire. Relaxed, natural sessions that capture real moments between you and your best friend."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Browse real pet photography sessions from across Yorkshire — relaxed portraits, golden hour walks, and genuine personality."
+    },
+    "contact": {
+      "title": "Contact & Booking",
+      "description": "Book a pet photography session in Yorkshire or ask a question — tell me about your pet and I'll get back to you with the details."
+    },
+    "petPortraits": {
+      "title": "Pet Portraits",
+      "description": "Timeless outdoor pet portraits in Yorkshire, from £125. Relaxed 60-minute sessions with no forced poses, just real personality."
+    },
+    "puppySessions": {
+      "title": "Puppy Sessions",
+      "description": "Four outdoor sessions across your puppy's first year in Yorkshire, from £375 — a proper record of every stage as they grow."
+    },
+    "multiPetSessions": {
+      "title": "Multi-Pet Sessions",
+      "description": "Relaxed outdoor sessions for two or more pets in Yorkshire, from £150 — getting everyone in frame, together and apart."
+    },
+    "bespoke": {
+      "title": "Bespoke Sessions",
+      "description": "Indoor shoots, unusual pets, or anything that doesn't fit a package. Tell me what you have in mind and I'll put together a quote."
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "This page isn't ready yet. Head back to the homepage or get in touch to book a pet photography session in Yorkshire."
     }
   }
 }

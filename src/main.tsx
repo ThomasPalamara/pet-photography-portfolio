@@ -8,6 +8,7 @@ import 'tailwindcss/tailwind.css';
 import './index.css';
 
 import router from './router';
+import { BRAND_NAME } from './config';
 
 const app = createRoot(document.getElementById('root')!);
 
@@ -15,7 +16,7 @@ app.render(
   <StrictMode>
     <HelmetProvider>
       <Helmet>
-        <title>Toma & Pals</title>
+        <title>{BRAND_NAME}</title>
       </Helmet>
       <Suspense fallback={null}>
         <RouterProvider router={router} />

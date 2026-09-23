@@ -1,12 +1,18 @@
 import { useTranslation } from "react-i18next";
 import { galleryImages } from "../utils/images";
 import shuffleArray from "../utils/shuffle";
+import Seo from "../components/Seo";
 
 const Gallery = () => {
-  const { t } = useTranslation("galleryPage");
+  const { t } = useTranslation(["galleryPage", "seo"]);
 
   return (
     <section className="max-w-6xl mx-auto px-6 md:px-12 py-14">
+      <Seo
+        title={t("seo:gallery.title")}
+        description={t("seo:gallery.description")}
+        path="/gallery"
+      />
       <p className="text-xs font-semibold tracking-widest text-gray-500 mb-2 uppercase">
         {t("eyebrow")}
       </p>

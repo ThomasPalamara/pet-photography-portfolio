@@ -1,12 +1,19 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
+import Seo from '../components/Seo';
 
 const NotFound = () => {
-  const { t } = useTranslation('notFound');
+  const { t } = useTranslation(['notFound', 'seo']);
 
   return (
     <section className="max-w-2xl mx-auto px-6 md:px-12 py-32 text-center">
+      <Seo
+        title={t('seo:notFound.title')}
+        description={t('seo:notFound.description')}
+        path="/404"
+        noindex
+      />
       <p className="text-xs font-semibold tracking-widest text-gray-500 mb-2 uppercase">
         {t('eyebrow')}
       </p>

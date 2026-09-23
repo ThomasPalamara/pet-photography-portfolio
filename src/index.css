@@ -24,3 +24,31 @@ html {
     column-count: 3;
   }
 }
+
+/* About section: heading appears before the photo on mobile, but sits
+   beside it (image left, heading+body stacked right) from lg upward. */
+.about-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "heading" "image" "body";
+}
+
+.about-grid > .about-heading {
+  grid-area: heading;
+}
+
+.about-grid > .about-image {
+  grid-area: image;
+}
+
+.about-grid > .about-body {
+  grid-area: body;
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image heading" "image body";
+    align-items: center;
+  }
+}

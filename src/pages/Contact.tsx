@@ -2,6 +2,7 @@ import { FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { SERVICES } from "../utils/services";
+import Seo from "../components/Seo";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -10,12 +11,20 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 type Status = "idle" | "sending" | "success" | "error";
 
 const Contact = () => {
-  const { t } = useTranslation(["contact", "services"]);
+  const { t } = useTranslation(["contact", "services", "seo"]);
   const [status, setStatus] = useState<Status>("idle");
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
+
+    const honeypot = form.elements.namedItem("company") as HTMLInputElement | null;
+    if (honeypot?.value) {
+      // Only bots fill this hidden field — pretend success without sending anything.
+      setStatus("success");
+      form.reset();
+      return;
+    }
 
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       setStatus("error");
@@ -35,6 +44,11 @@ const Contact = () => {
 
   return (
     <section className="max-w-3xl mx-auto px-6 md:px-12 py-20">
+      <Seo
+        title={t("seo:contact.title")}
+        description={t("seo:contact.description")}
+        path="/contact"
+      />
       <p className="text-xs font-semibold tracking-widest text-gray-500 mb-2 uppercase">
         {t("eyebrow")}
       </p>
@@ -44,6 +58,20 @@ const Contact = () => {
       <p className="mt-4 text-gray-600 max-w-xl">{t("subtitle")}</p>
 
       <form onSubmit={handleSubmit} className="mt-10 grid gap-6">
+        <div
+          style={{ position: "absolute", left: "-9999px", top: "-9999px" }}
+          aria-hidden="true"
+        >
+          <label htmlFor="company">Company</label>
+          <input
+            id="company"
+            name="company"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
+
         <div className="grid sm:grid-cols-2 gap-6">
           <div>
             <label

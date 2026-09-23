@@ -5,13 +5,13 @@ import { SERVICES } from "../../utils/services";
 import portraits from "../../imgs/portrait.jpg";
 import puppy from "../../imgs/puppy.jpg";
 import multiPet from "../../imgs/multiPet.jpg";
-import comingSoon from "../../imgs/hero3.jpg";
+import bespoke from "../../imgs/cats.jpeg";
 
 const IMAGES: Record<string, string> = {
   petPortraits: portraits,
   puppySessions: puppy,
   multiPetSessions: multiPet,
-  comingSoon: comingSoon,
+  bespoke: bespoke,
 };
 
 const Services = () => {

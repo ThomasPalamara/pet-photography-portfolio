@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="top"
-      className="mx-auto px-6 md:px-12 pt-14 pb-20 grid lg:grid-cols-2 gap-12 items-center "
+      className="max-w-7xl mx-auto px-6 md:px-12 pt-14 pb-20 grid lg:grid-cols-2 gap-12 items-center"
     >
       <div>
         <h1 className="font-serif text-5xl md:text-6xl leading-[1.1] text-gray-900">
@@ -53,7 +53,7 @@ const Hero = () => {
         </div> */}
       </div>
 
-      <div className="rounded-3xl overflow-hidden h-[510px] w-[470px]">
+      <div className="rounded-3xl overflow-hidden h-[320px] sm:h-[420px] lg:h-[510px] w-full lg:w-[470px] lg:justify-self-end">
         <img
           src={heroImage}
           alt={t("imageAlt")}

@@ -2,16 +2,22 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import Button from "../../components/Button";
+import Seo from "../../components/Seo";
 import portraitImage from "../../imgs/mainPortrait.jpg";
 
 const INCLUDED_IDS = ["session", "backdrop", "treats", "gallery", "downloads"];
 const PACKAGE_INCLUDE_IDS = ["pets", "duration", "images"];
 
 const PetPortraits = () => {
-  const { t } = useTranslation("petPortraits");
+  const { t } = useTranslation(["petPortraits", "seo"]);
 
   return (
     <section className="max-w-5xl mx-auto px-6 md:px-12 py-14">
+      <Seo
+        title={t("seo:petPortraits.title")}
+        description={t("seo:petPortraits.description")}
+        path="/services/pet-portraits"
+      />
       <Link
         to="/#services"
         className="inline-flex items-center gap-1 text-xs font-semibold tracking-widest text-gray-500 hover:text-gray-900 transition-colors uppercase"
