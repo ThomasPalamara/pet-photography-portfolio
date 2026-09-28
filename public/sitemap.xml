@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Update the domain below (and in robots.txt / src/config.ts SITE_URL)
-     once the real production domain is decided. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.thomasandpals.com/</loc>
+    <loc>https://thomas-and-pals.co.uk/</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/gallery</loc>
+    <loc>https://thomas-and-pals.co.uk/gallery</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/contact</loc>
+    <loc>https://thomas-and-pals.co.uk/contact</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/services/pet-portraits</loc>
+    <loc>https://thomas-and-pals.co.uk/services/pet-portraits</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/services/puppy-sessions</loc>
+    <loc>https://thomas-and-pals.co.uk/services/puppy-sessions</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/services/multi-pet-sessions</loc>
+    <loc>https://thomas-and-pals.co.uk/services/multi-pet-sessions</loc>
   </url>
   <url>
-    <loc>https://www.thomasandpals.com/services/bespoke-sessions</loc>
+    <loc>https://thomas-and-pals.co.uk/services/bespoke-sessions</loc>
   </url>
 </urlset>

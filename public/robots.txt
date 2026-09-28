@@ -1,6 +1,4 @@
-# Update the domain below (and in sitemap.xml / src/config.ts SITE_URL)
-# once the real production domain is decided.
 User-agent: *
 Allow: /
 
-Sitemap: https://www.thomasandpals.com/sitemap.xml
+Sitemap: https://thomas-and-pals.co.uk/sitemap.xml
