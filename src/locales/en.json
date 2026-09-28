@@ -19,6 +19,7 @@
     "contactHeading": "Get In Touch",
     "location": "Yorkshire, UK",
     "instagramHandle": "@thomas.pals.pet.photography",
+    "personalInstagramHandle": "@thomaspalamara.photography",
     "copyright": "© {{year}} {{brand}}. All rights reserved."
   },
   "hero": {
@@ -103,7 +104,8 @@
     "headingLine2": "From wildlife to wagging tails.",
     "paragraph": "I started out as a wildlife photographer. One afternoon I was shooting in the park when I noticed a dog show going on nearby, so I wandered over for a look and started taking pictures and the owners I met wanted proper portraits of their dogs. That was the start of {{brand}}. I still work mostly outdoors, where pets are at their most playful and themselves, and I bring my wildlife habits with me: patience, natural light, and waiting for the moment rather than forcing it.",
     "imageAlt": "Thomas, pet photographer at {{brand}}",
-    "bookASession": "Book a Session"
+    "bookASession": "Book a Session",
+    "wildlifeInstagram": "See my wildlife work on Instagram"
   },
   "contact": {
     "eyebrow": "Get In Touch",

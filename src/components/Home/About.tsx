@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import InstagramIcon from "../icons/InstagramIcon";
+import { PERSONAL_INSTAGRAM_URL } from "../../config";
 import aboutImage from "../../imgs/about.jpg";
 
 const About = () => {
@@ -34,6 +36,15 @@ const About = () => {
         <p className="text-gray-600 leading-relaxed max-w-md">
           {t("paragraph")}
         </p>
+        <a
+          href={PERSONAL_INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex w-fit items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors"
+        >
+          <InstagramIcon />
+          {t("wildlifeInstagram")}
+        </a>
         <Button href="/contact" className="mt-8">
           {t("bookASession")}
         </Button>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Mail, MapPin } from 'lucide-react';
 import { GIFT_VOUCHER_HREF, SERVICES } from '../../utils/services';
-import { CONTACT_EMAIL, INSTAGRAM_URL } from '../../config';
+import { CONTACT_EMAIL, INSTAGRAM_URL, PERSONAL_INSTAGRAM_URL } from '../../config';
 import InstagramIcon from '../icons/InstagramIcon';
 
 const NAV_LINKS = [
@@ -104,6 +104,17 @@ const Footer = () => {
               >
                 <InstagramIcon />
                 {t('footer:instagramHandle')}
+              </a>
+            </li>
+            <li>
+              <a
+                href={PERSONAL_INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors"
+              >
+                <InstagramIcon />
+                {t('footer:personalInstagramHandle')}
               </a>
             </li>
             <li className="flex items-center gap-2 text-sm text-gray-600">
