@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import Button from "../../components/Button";
 import Seo from "../../components/Seo";
-import multiPetImage from "../../imgs/multipet.jpg";
+import multiPetImage from "../../imgs/multiPets.jpg";
 
 const INCLUDED_IDS = [
   "session",
