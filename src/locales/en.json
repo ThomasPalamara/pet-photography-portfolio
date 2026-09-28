@@ -46,6 +46,10 @@
       "booking": {
         "title": "Easy Booking",
         "description": "Send me a message and we'll work around your schedule."
+      },
+      "local": {
+        "title": "Local to Yorkshire",
+        "description": "Sessions at your home or a favourite Yorkshire walk, wherever your pet is happiest."
       }
     }
   },
@@ -71,6 +75,15 @@
         "description": "Unusual pets, indoor shoots, or anything else that doesn't fit a package — get in touch for a quote."
       }
     }
+  },
+  "giftVouchers": {
+    "eyebrow": "Gift Vouchers",
+    "heading": "Know someone who'd love this?",
+    "paragraph": "Give a voucher for any session or a set amount, perfect for birthdays, Christmas or a new puppy. Vouchers come as a PDF you can print or forward, and are valid for 12 months.",
+    "cta": "Enquire about a voucher",
+    "pricingNote": "Also available as a gift voucher.",
+    "pricingLink": "Find out more",
+    "footerLink": "Gift Vouchers"
   },
   "gallery": {
     "eyebrow": "Featured Gallery",
@@ -101,12 +114,15 @@
       "email": "Email",
       "phone": "Phone (optional)",
       "service": "Session Type",
-      "message": "Message"
+      "message": "Message",
+      "giftVoucher": "Gift Voucher"
     },
     "submit": "Send Message",
     "sending": "Sending...",
     "success": "Thanks! Your message has been sent. I'll be in touch soon.",
-    "error": "Sorry, something went wrong sending your message. Please try again or email me directly."
+    "error": "Sorry, something went wrong sending your message. Please try again or email me directly.",
+    "giftHint": "Let me know who it's for, whether you'd like a specific session or a set amount, and when you need it by. I'll email you the PDF voucher.",
+    "directContact": "You can also reach me directly:"
   },
   "notFound": {
     "eyebrow": "Coming Soon",

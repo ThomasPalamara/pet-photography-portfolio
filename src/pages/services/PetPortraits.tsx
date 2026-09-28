@@ -3,13 +3,14 @@ import { useTranslation } from "react-i18next";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import Button from "../../components/Button";
 import Seo from "../../components/Seo";
+import { GIFT_VOUCHER_HREF } from "../../utils/services";
 import portraitImage from "../../imgs/mainPortrait.jpg";
 
 const INCLUDED_IDS = ["session", "backdrop", "treats", "gallery", "downloads"];
 const PACKAGE_INCLUDE_IDS = ["pets", "duration", "images"];
 
 const PetPortraits = () => {
-  const { t } = useTranslation(["petPortraits", "seo"]);
+  const { t } = useTranslation(["petPortraits", "seo", "giftVouchers"]);
 
   return (
     <section className="max-w-5xl mx-auto px-6 md:px-12 py-14">
@@ -97,6 +98,12 @@ const PetPortraits = () => {
           </ul>
 
           <p className="mt-6 text-xs text-gray-500">{t("package.note")}</p>
+          <p className="mt-2 text-xs text-gray-500">
+            {t("giftVouchers:pricingNote")}{" "}
+            <Link to={GIFT_VOUCHER_HREF} className="text-primary hover:text-primary-dark underline">
+              {t("giftVouchers:pricingLink")}
+            </Link>
+          </p>
 
           <div className="mt-6">
             <Button href="/contact" className="w-full text-center">

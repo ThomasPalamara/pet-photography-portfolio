@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Camera, PawPrint, CalendarCheck } from "lucide-react";
+import { Camera, PawPrint, CalendarCheck, MapPin } from "lucide-react";
 
 const FEATURES = [
   // { id: "patient", icon: Heart },
   { id: "natural", icon: Camera },
   { id: "quality", icon: PawPrint },
   { id: "booking", icon: CalendarCheck },
+  { id: "local", icon: MapPin },
 ];
 
 const Features = () => {
@@ -13,10 +14,10 @@ const Features = () => {
 
   return (
     <section className=" bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-14 grid grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {FEATURES.map(({ id, icon: Icon }) => (
           <div key={id} className="flex flex-row  gap-3">
-            <Icon className="text-primary mr-2" size={44} />
+            <Icon className="text-primary mr-2 flex-shrink-0" size={28} />
             <div>
               <h3 className="text-md font-semibold text-gray-900 mb-1">
                 {t(`items.${id}.title`)}

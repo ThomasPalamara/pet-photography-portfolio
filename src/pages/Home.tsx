@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Hero from "../components/Home/Hero";
 import Features from "../components/Home/Features";
 import Services from "../components/Home/Services";
+import GiftVouchers from "../components/Home/GiftVouchers";
 import Gallery from "../components/Home/Gallery";
 import About from "../components/Home/About";
 import Seo from "../components/Seo";
@@ -17,6 +18,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Services />
+      <GiftVouchers />
       <Gallery />
       <About />
     </>

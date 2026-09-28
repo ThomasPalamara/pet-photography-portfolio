@@ -1,8 +1,12 @@
 import { FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import { SERVICES } from "../utils/services";
+import { Mail } from "lucide-react";
+import { GIFT_VOUCHER_SERVICE, SERVICES } from "../utils/services";
+import { CONTACT_EMAIL, INSTAGRAM_URL } from "../config";
 import Seo from "../components/Seo";
+import InstagramIcon from "../components/icons/InstagramIcon";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -11,8 +15,17 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 type Status = "idle" | "sending" | "success" | "error";
 
 const Contact = () => {
-  const { t } = useTranslation(["contact", "services", "seo"]);
+  const { t } = useTranslation(["contact", "services", "seo", "footer"]);
   const [status, setStatus] = useState<Status>("idle");
+  const [searchParams] = useSearchParams();
+  const giftVoucherLabel = t("fields.giftVoucher");
+  const defaultService = t(`services:items.${SERVICES[0].id}.title`);
+  const [selectedService, setSelectedService] = useState(
+    searchParams.get("service") === GIFT_VOUCHER_SERVICE
+      ? giftVoucherLabel
+      : defaultService
+  );
+  const isGiftVoucher = selectedService === giftVoucherLabel;
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -37,6 +50,7 @@ const Contact = () => {
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY);
       setStatus("success");
       form.reset();
+      setSelectedService(defaultService);
     } catch (error) {
       setStatus("error");
     }
@@ -56,6 +70,26 @@ const Contact = () => {
         {t("heading")}
       </h1>
       <p className="mt-4 text-gray-600 max-w-xl">{t("subtitle")}</p>
+
+      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
+        <span className="text-sm text-gray-500">{t("directContact")}</span>
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="flex items-center gap-2 text-sm text-gray-700 hover:text-primary transition-colors"
+        >
+          <Mail size={16} className="flex-shrink-0" />
+          {CONTACT_EMAIL}
+        </a>
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-sm text-gray-700 hover:text-primary transition-colors"
+        >
+          <InstagramIcon />
+          {t("footer:instagramHandle")}
+        </a>
+      </div>
 
       <form onSubmit={handleSubmit} className="mt-10 grid gap-6">
         <div
@@ -130,6 +164,8 @@ const Contact = () => {
             <select
               id="service"
               name="service"
+              value={selectedService}
+              onChange={(event) => setSelectedService(event.target.value)}
               className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
             >
               {SERVICES.map((service) => (
@@ -140,6 +176,7 @@ const Contact = () => {
                   {t(`services:items.${service.id}.title`)}
                 </option>
               ))}
+              <option value={giftVoucherLabel}>{giftVoucherLabel}</option>
             </select>
           </div>
         </div>
@@ -158,6 +195,9 @@ const Contact = () => {
             required
             className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
           />
+          {isGiftVoucher && (
+            <p className="mt-2 text-xs text-gray-500">{t("giftHint")}</p>
+          )}
         </div>
 
         <div className="flex items-center gap-4">
