@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { SERVICES } from "../../utils/services";
 import portraits from "../../imgs/portrait.jpg";
 import puppy from "../../imgs/puppy.jpg";
-import multiPet from "../../imgs/multiPet.jpg";
+import multiPet from "../../imgs/multiPets.jpg";
 import bespoke from "../../imgs/cats.jpeg";
 
 const IMAGES: Record<string, string> = {
