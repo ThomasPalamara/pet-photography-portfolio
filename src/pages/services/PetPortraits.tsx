@@ -4,6 +4,7 @@ import { ArrowLeft, CheckCircle } from "lucide-react";
 import Button from "../../components/Button";
 import Seo from "../../components/Seo";
 import { GIFT_VOUCHER_HREF } from "../../utils/services";
+import { PRICES } from "../../config";
 import portraitImage from "../../imgs/mainPortrait.jpg";
 
 const INCLUDED_IDS = ["session", "backdrop", "treats", "gallery", "downloads"];
@@ -16,7 +17,7 @@ const PetPortraits = () => {
     <section className="max-w-5xl mx-auto px-6 md:px-12 py-14">
       <Seo
         title={t("seo:petPortraits.title")}
-        description={t("seo:petPortraits.description")}
+        description={t("seo:petPortraits.description", { price: PRICES.petPortraits })}
         path="/services/pet-portraits"
       />
       <Link
@@ -79,7 +80,7 @@ const PetPortraits = () => {
             {t("package.name")}
           </h2>
           <p className="mt-2 text-3xl font-semibold text-gray-900">
-            {t("package.price")}
+            {t("package.price", { price: PRICES.petPortraits })}
           </p>
 
           <ul className="mt-6 space-y-3">

@@ -4,6 +4,7 @@ import { ArrowLeft, CheckCircle } from "lucide-react";
 import Button from "../../components/Button";
 import Seo from "../../components/Seo";
 import { GIFT_VOUCHER_HREF } from "../../utils/services";
+import { PRICES } from "../../config";
 import multiPetImage from "../../imgs/multiPets.jpg";
 
 const INCLUDED_IDS = [
@@ -23,7 +24,7 @@ const MultiPetSessions = () => {
     <section className="max-w-5xl mx-auto px-6 md:px-12 py-14">
       <Seo
         title={t("seo:multiPetSessions.title")}
-        description={t("seo:multiPetSessions.description")}
+        description={t("seo:multiPetSessions.description", { price: PRICES.multiPetSessions })}
         path="/services/multi-pet-sessions"
       />
       <Link
@@ -85,7 +86,7 @@ const MultiPetSessions = () => {
             {t("package.name")}
           </h2>
           <p className="mt-2 text-3xl font-semibold text-gray-900">
-            {t("package.price")}
+            {t("package.price", { price: PRICES.multiPetSessions })}
           </p>
 
           <ul className="mt-6 space-y-3">

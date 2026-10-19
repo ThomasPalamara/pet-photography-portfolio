@@ -151,7 +151,7 @@
     "pricingEyebrow": "Pricing",
     "package": {
       "name": "The Portrait Session",
-      "price": "£125",
+      "price": "£{{price}}",
       "includes": {
         "pets": "One pet",
         "duration": "60-minute session",
@@ -179,7 +179,7 @@
     "pricingEyebrow": "Pricing",
     "package": {
       "name": "The Puppy's First Year",
-      "price": "£375",
+      "price": "£{{price}}",
       "includes": {
         "sessions": "Four sessions for the price of three",
         "duration": "60 minutes per session",
@@ -208,7 +208,7 @@
     "pricingEyebrow": "Pricing",
     "package": {
       "name": "The Multi-Pet Session",
-      "price": "£150",
+      "price": "£{{price}}",
       "includes": {
         "pets": "Two pets",
         "duration": "60-minute session",
@@ -252,15 +252,15 @@
     },
     "petPortraits": {
       "title": "Pet Portraits",
-      "description": "Timeless outdoor pet portraits in Yorkshire, from £125. Relaxed 60-minute sessions with no forced poses, just real personality."
+      "description": "Timeless outdoor pet portraits in Yorkshire, from £{{price}}. Relaxed 60-minute sessions with no forced poses, just real personality."
     },
     "puppySessions": {
       "title": "Puppy Sessions",
-      "description": "Four outdoor sessions across your puppy's first year in Yorkshire, from £375 — a proper record of every stage as they grow."
+      "description": "Four outdoor sessions across your puppy's first year in Yorkshire, from £{{price}} — a proper record of every stage as they grow."
     },
     "multiPetSessions": {
       "title": "Multi-Pet Sessions",
-      "description": "Relaxed outdoor sessions for two or more pets in Yorkshire, from £150 — getting everyone in frame, together and apart."
+      "description": "Relaxed outdoor sessions for two or more pets in Yorkshire, from £{{price}} — getting everyone in frame, together and apart."
     },
     "bespoke": {
       "title": "Bespoke Sessions",
