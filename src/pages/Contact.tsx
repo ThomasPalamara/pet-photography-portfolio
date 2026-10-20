@@ -31,9 +31,10 @@ const Contact = () => {
     event.preventDefault();
     const form = event.currentTarget;
 
-    const honeypot = form.elements.namedItem("company") as HTMLInputElement | null;
+    const honeypot = form.elements.namedItem("hp_check") as HTMLInputElement | null;
     if (honeypot?.value) {
       // Only bots fill this hidden field — pretend success without sending anything.
+      // Its name/label must not look like a real field (e.g. "company"), or browser autofill fills it for real users.
       setStatus("success");
       form.reset();
       return;
@@ -96,13 +97,15 @@ const Contact = () => {
           style={{ position: "absolute", left: "-9999px", top: "-9999px" }}
           aria-hidden="true"
         >
-          <label htmlFor="company">Company</label>
+          <label htmlFor="hp_check">Leave this field empty</label>
           <input
-            id="company"
-            name="company"
+            id="hp_check"
+            name="hp_check"
             type="text"
             tabIndex={-1}
-            autoComplete="off"
+            autoComplete="new-password"
+            data-lpignore="true"
+            data-1p-ignore
           />
         </div>
 
